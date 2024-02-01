@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread -pthread  -rdynamic CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o  -o serial_pub_simple  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 

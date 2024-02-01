@@ -1,0 +1,11 @@
+/home/anton202/boost_rx_tx/build/CMakeFiles/rebuild_cache.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/edit_cache.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/tcp_cam_sub_server.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/img_recv_simple.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/img_send_simple.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/client.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/server.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/recv_img_tcp.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/tcp_cam_pub_client.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/send_img_tcp.dir
+/home/anton202/boost_rx_tx/build/CMakeFiles/serial_pub_simple.dir

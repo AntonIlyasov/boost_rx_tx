@@ -1,0 +1,45 @@
+#include <iostream>
+#include <boost/asio.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/core.hpp>
+
+using namespace boost::asio;
+using ip::tcp;
+using std::string;
+using std::cout;
+using std::endl;
+
+/*class Camera{
+public:
+    Camera(){
+
+    }
+};*/
+
+int main() {
+    //OpenCV
+    std::cout << "start camera_pub_by_server";
+    cv::VideoCapture cap(0);
+    cv::Mat img;
+    std::vector<uchar> buffer;
+
+    //Boost
+    boost::asio::io_service io_service;
+    tcp::acceptor acceptor_(io_service, tcp::endpoint(tcp::v4(), 1234 ));
+    tcp::socket socket_(io_service);
+    acceptor_.accept(socket_);
+    boost::system::error_code err;
+
+    while(1){
+        cap.read(img);
+        cv::cvtColor(img, img, cv::COLOR_BGRA2GRAY);
+        cv::imencode(".jpg", img, buffer, std::vector<int> {cv::IMWRITE_JPEG_QUALITY, 95});
+        auto bytesSent = socket_.send( boost::asio::buffer( buffer ), 0, err );
+        imshow("Image", img);
+        cv::waitKey(1);
+    }
+
+    return 0;
+}

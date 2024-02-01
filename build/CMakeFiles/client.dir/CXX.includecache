@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anton202/boost_rx_tx/client.cpp
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+filesystem
+-
+boost/asio.hpp
+-
+
