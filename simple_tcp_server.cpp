@@ -16,18 +16,23 @@ using boost::asio::ip::tcp;
 
 uint32_t keepalive = 0;
 
-uint32_t inline make_uint32(uint8_t* buf) {
-    return (buf[0] << 24) + (buf[1] << 16) + (buf[2] << 8) + buf[3];
+uint32_t make_uint32(uint8_t* buf) {
+  printf("\nbuf[0]: ", uint8_t(buf[0]));
+  printf("\nbuf[1]: ", uint8_t(buf[1]));
+  printf("\nbuf[2]: ", uint8_t(buf[2]));
+  printf("\nbuf[3]: ", uint8_t(buf[3]));
+  printf("\n");
+  return (buf[0] << 24) + (buf[1] << 16) + (buf[2] << 8) + buf[3];
 }
 
 class session
 {
 public:
   session(boost::asio::io_context& io_context)
-    : socket_(io_context) {
-      recvd_count = 0;
-      send_count  = 0;
-    }
+  : socket_(io_context) {
+    recvd_count = 0;
+    send_count  = 0;
+  }
 
   tcp::socket& socket()
   {
@@ -102,8 +107,8 @@ private:
 class TCPServer{
 public:
   TCPServer(boost::asio::io_context& io_context)
-    : io_context(io_context),
-      acceptor(io_context, tcp::endpoint(tcp::v4(), PORT))
+  : io_context(io_context),
+    acceptor(io_context, tcp::endpoint(tcp::v4(), PORT))
   {
     std::cout << "TCP SERVER IS RUNNING\n";
     async_accept();
@@ -111,10 +116,6 @@ public:
 private:
   boost::asio::io_context& io_context;
   tcp::acceptor acceptor;
-
-  enum {max_length = 600};
-  uint8_t data_[max_length] = {0};
-  uint32_t recvd_count = 0;
 
   void async_accept()
   {
@@ -143,9 +144,7 @@ int main(int argc, char* argv[])
   try{
     boost::asio::io_context io_context;
     TCPServer tcpServer(io_context);
-    while(1) {
-      io_context.poll_one();
-    }
+    io_context.run();
   } catch (std::exception e){
     std::cerr << "Exeption: " << e.what() << std::endl;
   }
