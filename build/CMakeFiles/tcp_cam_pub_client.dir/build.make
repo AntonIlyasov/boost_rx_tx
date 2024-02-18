@@ -60,15 +60,15 @@ include CMakeFiles/tcp_cam_pub_client.dir/flags.make
 CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o: CMakeFiles/tcp_cam_pub_client.dir/flags.make
 CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o: ../tcp_cam_pub_client.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp
 
 CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp > CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp > CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.i
 
 CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp -o CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp -o CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.s
 
 # Object files for target tcp_cam_pub_client
 tcp_cam_pub_client_OBJECTS = \

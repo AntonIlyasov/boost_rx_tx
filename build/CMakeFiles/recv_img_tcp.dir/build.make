@@ -60,15 +60,15 @@ include CMakeFiles/recv_img_tcp.dir/flags.make
 CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o: CMakeFiles/recv_img_tcp.dir/flags.make
 CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o: ../recv_img_tcp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/recv_img_tcp.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/recv_img_tcp.cpp
 
 CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/recv_img_tcp.cpp > CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/recv_img_tcp.cpp > CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.i
 
 CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/recv_img_tcp.cpp -o CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/recv_img_tcp.cpp -o CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.s
 
 # Object files for target recv_img_tcp
 recv_img_tcp_OBJECTS = \

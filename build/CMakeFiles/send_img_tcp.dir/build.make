@@ -60,15 +60,15 @@ include CMakeFiles/send_img_tcp.dir/flags.make
 CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o: CMakeFiles/send_img_tcp.dir/flags.make
 CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o: ../send_img_tcp.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/send_img_tcp.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/send_img_tcp.cpp
 
 CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/send_img_tcp.cpp > CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/send_img_tcp.cpp > CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.i
 
 CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/send_img_tcp.cpp -o CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/send_img_tcp.cpp -o CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.s
 
 # Object files for target send_img_tcp
 send_img_tcp_OBJECTS = \

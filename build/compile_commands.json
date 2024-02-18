@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -isystem /usr/local/include/opencv4   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp",
+  "file": "/home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o -c /home/anton202/boost_rx_tx/img_recv_simple.cpp",
+  "file": "/home/anton202/boost_rx_tx/img_recv_simple.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/img_send_simple.dir/img_send_simple.cpp.o -c /home/anton202/boost_rx_tx/img_send_simple.cpp",
+  "file": "/home/anton202/boost_rx_tx/img_send_simple.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/client.dir/client.cpp.o -c /home/anton202/boost_rx_tx/client.cpp",
+  "file": "/home/anton202/boost_rx_tx/client.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/server.dir/server.cpp.o -c /home/anton202/boost_rx_tx/server.cpp",
+  "file": "/home/anton202/boost_rx_tx/server.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -isystem /usr/local/include/opencv4   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/recv_img_tcp.cpp",
+  "file": "/home/anton202/boost_rx_tx/recv_img_tcp.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -isystem /usr/local/include/opencv4   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/tcp_cam_pub_client.dir/tcp_cam_pub_client.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp",
+  "file": "/home/anton202/boost_rx_tx/tcp_cam_pub_client.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -isystem /usr/local/include/opencv4   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o -c /home/anton202/boost_rx_tx/send_img_tcp.cpp",
+  "file": "/home/anton202/boost_rx_tx/send_img_tcp.cpp"
+},
+{
+  "directory": "/home/anton202/boost_rx_tx/build",
+  "command": "/usr/bin/g++  -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK   -std=c++11 -pthread -pthread -g   -std=gnu++17 -o CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o -c /home/anton202/boost_rx_tx/serial_pub_simple.cpp",
+  "file": "/home/anton202/boost_rx_tx/serial_pub_simple.cpp"
+}
+]

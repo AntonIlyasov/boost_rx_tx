@@ -60,15 +60,15 @@ include CMakeFiles/img_recv_simple.dir/flags.make
 CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o: CMakeFiles/img_recv_simple.dir/flags.make
 CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o: ../img_recv_simple.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o -c /home/anton202/boost_rx_tx/img_recv_simple.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.o -c /home/anton202/boost_rx_tx/img_recv_simple.cpp
 
 CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/img_recv_simple.cpp > CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/img_recv_simple.cpp > CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.i
 
 CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/img_recv_simple.cpp -o CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/img_recv_simple.cpp -o CMakeFiles/img_recv_simple.dir/img_recv_simple.cpp.s
 
 # Object files for target img_recv_simple
 img_recv_simple_OBJECTS = \

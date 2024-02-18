@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++11 -pthread -pthread  -rdynamic CMakeFiles/img_send_simple.dir/img_send_simple.cpp.o  -o img_send_simple  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 
+/usr/bin/g++   -std=c++11 -pthread -pthread -g  -rdynamic CMakeFiles/img_send_simple.dir/img_send_simple.cpp.o  -o img_send_simple  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 

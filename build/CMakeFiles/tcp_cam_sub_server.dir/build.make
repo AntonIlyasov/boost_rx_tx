@@ -60,15 +60,15 @@ include CMakeFiles/tcp_cam_sub_server.dir/flags.make
 CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o: CMakeFiles/tcp_cam_sub_server.dir/flags.make
 CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o: ../tcp_cam_sub_server.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.o -c /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp
 
 CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp > CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp > CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.i
 
 CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp -o CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/tcp_cam_sub_server.cpp -o CMakeFiles/tcp_cam_sub_server.dir/tcp_cam_sub_server.cpp.s
 
 # Object files for target tcp_cam_sub_server
 tcp_cam_sub_server_OBJECTS = \

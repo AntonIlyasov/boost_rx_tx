@@ -1,0 +1,131 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "boost_rx_tx",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Debug-ef0e6a7bf6decbc39f74.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "img_recv_simple::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-img_recv_simple-Debug-6a3e07a87ee3ce215173.json",
+					"name" : "img_recv_simple",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "img_send_simple::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-img_send_simple-Debug-dcf5b2e2ae638ca1030a.json",
+					"name" : "img_send_simple",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "recv_img_tcp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-recv_img_tcp-Debug-8354ac5f25bab9fbef88.json",
+					"name" : "recv_img_tcp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "send_img_tcp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-send_img_tcp-Debug-12ab3fa8b265f6aecc4b.json",
+					"name" : "send_img_tcp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "serial_pub_simple::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-serial_pub_simple-Debug-1a6483494c00e7b1d0f3.json",
+					"name" : "serial_pub_simple",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Debug-907dcd8aa122a9a1a916.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tcp_cam_pub_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcp_cam_pub_client-Debug-fb08d114739785c0a3f7.json",
+					"name" : "tcp_cam_pub_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tcp_cam_sub_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcp_cam_sub_server-Debug-c9d1a9aec2423b0709d3.json",
+					"name" : "tcp_cam_sub_server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anton202/boost_rx_tx/build",
+		"source" : "/home/anton202/boost_rx_tx"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

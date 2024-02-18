@@ -60,15 +60,15 @@ include CMakeFiles/serial_pub_simple.dir/flags.make
 CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o: CMakeFiles/serial_pub_simple.dir/flags.make
 CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o: ../serial_pub_simple.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o -c /home/anton202/boost_rx_tx/serial_pub_simple.cpp
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.o -c /home/anton202/boost_rx_tx/serial_pub_simple.cpp
 
 CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/serial_pub_simple.cpp > CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton202/boost_rx_tx/serial_pub_simple.cpp > CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.i
 
 CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/serial_pub_simple.cpp -o CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton202/boost_rx_tx/serial_pub_simple.cpp -o CMakeFiles/serial_pub_simple.dir/serial_pub_simple.cpp.s
 
 # Object files for target serial_pub_simple
 serial_pub_simple_OBJECTS = \
