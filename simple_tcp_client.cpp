@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
       // <-------------------------send msg to TCP----------------------------->
       uint8_t cmd  = (uint8_t)std::stoi(argv[1]);
       sendMsg(cmd, socket);
-      recvdMsg(socket);
+      // recvdMsg(socket);
       std::this_thread::sleep_for(std::chrono::microseconds(1000));
     }
   }

@@ -17,18 +17,13 @@ using boost::asio::ip::tcp;
 uint32_t keepalive = 0;
 
 uint32_t make_uint32(uint8_t* buf) {
-  printf("\nbuf[0]: ", uint8_t(buf[0]));
-  printf("\nbuf[1]: ", uint8_t(buf[1]));
-  printf("\nbuf[2]: ", uint8_t(buf[2]));
-  printf("\nbuf[3]: ", uint8_t(buf[3]));
-  printf("\n");
   return (buf[0] << 24) + (buf[1] << 16) + (buf[2] << 8) + buf[3];
 }
 
-class session
+class Session
 {
 public:
-  session(boost::asio::io_context& io_context)
+  Session(boost::asio::io_context& io_context)
   : socket_(io_context) {
     recvd_count = 0;
     send_count  = 0;
@@ -39,10 +34,19 @@ public:
     return socket_;
   }
 
-  void start()
+  void async_read()
   {
     socket_.async_read_some(boost::asio::buffer(data_, max_length),
-        boost::bind(&session::handle_read, this,
+        boost::bind(&Session::handle_read, this,
+          boost::asio::placeholders::error,
+          boost::asio::placeholders::bytes_transferred));
+  }
+
+  void async_write(size_t bytes_transferred)
+  {
+    boost::asio::async_write(socket_,
+        boost::asio::buffer(data_, bytes_transferred),
+        boost::bind(&Session::handle_write, this,
           boost::asio::placeholders::error,
           boost::asio::placeholders::bytes_transferred));
   }
@@ -56,7 +60,7 @@ private:
   {
     if (!error)
     {
-      std::cout << "NEW MESSAGE RECEIVED!" << std::endl;
+      std::cout << "NEW MESSAGE RECEIVED!!!!!!)))))" << std::endl;
       recvd_count++;
       std::cout << "bytes_transferred = " << bytes_transferred << std::endl;
       for (int i = 0; i < bytes_transferred; i++){
@@ -64,11 +68,7 @@ private:
       }
       std::cout << "\nKEEPALIVE = " << make_uint32(data_ + 4) << std::endl;
       std::cout << "\n\033[1;32mRECEIVED \033[0m= " << recvd_count << std::endl;
-      boost::asio::async_write(socket_,
-          boost::asio::buffer(data_, bytes_transferred),
-          boost::bind(&session::handle_write, this,
-            boost::asio::placeholders::error,
-            boost::asio::placeholders::bytes_transferred));
+      async_write(bytes_transferred);
     }
     else
     {
@@ -88,10 +88,7 @@ private:
       std::cout << std::endl;
       send_count++;
       std::cout << "\033[1;32msend_count\033[0m = " << send_count << "\n";
-      socket_.async_read_some(boost::asio::buffer(data_, max_length),
-          boost::bind(&session::handle_read, this,
-            boost::asio::placeholders::error,
-            boost::asio::placeholders::bytes_transferred));
+      async_read();
     }
     else
     {
@@ -119,19 +116,19 @@ private:
 
   void async_accept()
   {
-    session* new_session = new session(io_context);
-    acceptor.async_accept(new_session->socket(),
-        boost::bind(&TCPServer::handle_accept, this, new_session,
+    Session* new_Session = new Session(io_context);
+    acceptor.async_accept(new_Session->socket(),
+        boost::bind(&TCPServer::handle_accept, this, new_Session,
         boost::asio::placeholders::error));
   }
 
-  void handle_accept(session* new_session,
+  void handle_accept(Session* new_Session,
       const boost::system::error_code& error){
     if (!error){
-      new_session->start();
+      new_Session->async_read();
     }
     else {
-      delete new_session;
+      delete new_Session;
     }
     async_accept();
   }
