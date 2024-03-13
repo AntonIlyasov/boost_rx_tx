@@ -124,6 +124,19 @@ tcp_cam_sub_server/fast:
 .PHONY : tcp_cam_sub_server/fast
 
 #=============================================================================
+# Target rules for targets named tcp_cam_pub_client
+
+# Build rule for target.
+tcp_cam_pub_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_cam_pub_client
+.PHONY : tcp_cam_pub_client
+
+# fast build rule for target.
+tcp_cam_pub_client/fast:
+	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/build
+.PHONY : tcp_cam_pub_client/fast
+
+#=============================================================================
 # Target rules for targets named img_recv_simple
 
 # Build rule for target.
@@ -150,19 +163,6 @@ img_send_simple/fast:
 .PHONY : img_send_simple/fast
 
 #=============================================================================
-# Target rules for targets named client
-
-# Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 client
-.PHONY : client
-
-# fast build rule for target.
-client/fast:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-.PHONY : client/fast
-
-#=============================================================================
 # Target rules for targets named server
 
 # Build rule for target.
@@ -176,43 +176,17 @@ server/fast:
 .PHONY : server/fast
 
 #=============================================================================
-# Target rules for targets named recv_img_tcp
+# Target rules for targets named client
 
 # Build rule for target.
-recv_img_tcp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 recv_img_tcp
-.PHONY : recv_img_tcp
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-recv_img_tcp/fast:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/build
-.PHONY : recv_img_tcp/fast
-
-#=============================================================================
-# Target rules for targets named tcp_cam_pub_client
-
-# Build rule for target.
-tcp_cam_pub_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_cam_pub_client
-.PHONY : tcp_cam_pub_client
-
-# fast build rule for target.
-tcp_cam_pub_client/fast:
-	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/build
-.PHONY : tcp_cam_pub_client/fast
-
-#=============================================================================
-# Target rules for targets named send_img_tcp
-
-# Build rule for target.
-send_img_tcp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 send_img_tcp
-.PHONY : send_img_tcp
-
-# fast build rule for target.
-send_img_tcp/fast:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/build
-.PHONY : send_img_tcp/fast
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 #=============================================================================
 # Target rules for targets named serial_pub_simple
@@ -307,60 +281,6 @@ img_send_simple.s: img_send_simple.cpp.s
 img_send_simple.cpp.s:
 	$(MAKE) -f CMakeFiles/img_send_simple.dir/build.make CMakeFiles/img_send_simple.dir/img_send_simple.cpp.s
 .PHONY : img_send_simple.cpp.s
-
-recv_img_tcp.o: recv_img_tcp.cpp.o
-
-.PHONY : recv_img_tcp.o
-
-# target to build an object file
-recv_img_tcp.cpp.o:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.o
-.PHONY : recv_img_tcp.cpp.o
-
-recv_img_tcp.i: recv_img_tcp.cpp.i
-
-.PHONY : recv_img_tcp.i
-
-# target to preprocess a source file
-recv_img_tcp.cpp.i:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.i
-.PHONY : recv_img_tcp.cpp.i
-
-recv_img_tcp.s: recv_img_tcp.cpp.s
-
-.PHONY : recv_img_tcp.s
-
-# target to generate assembly for a file
-recv_img_tcp.cpp.s:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/recv_img_tcp.cpp.s
-.PHONY : recv_img_tcp.cpp.s
-
-send_img_tcp.o: send_img_tcp.cpp.o
-
-.PHONY : send_img_tcp.o
-
-# target to build an object file
-send_img_tcp.cpp.o:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.o
-.PHONY : send_img_tcp.cpp.o
-
-send_img_tcp.i: send_img_tcp.cpp.i
-
-.PHONY : send_img_tcp.i
-
-# target to preprocess a source file
-send_img_tcp.cpp.i:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.i
-.PHONY : send_img_tcp.cpp.i
-
-send_img_tcp.s: send_img_tcp.cpp.s
-
-.PHONY : send_img_tcp.s
-
-# target to generate assembly for a file
-send_img_tcp.cpp.s:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/send_img_tcp.cpp.s
-.PHONY : send_img_tcp.cpp.s
 
 serial_pub_simple.o: serial_pub_simple.cpp.o
 
@@ -479,13 +399,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tcp_cam_sub_server"
+	@echo "... tcp_cam_pub_client"
 	@echo "... img_recv_simple"
 	@echo "... img_send_simple"
-	@echo "... client"
 	@echo "... server"
-	@echo "... recv_img_tcp"
-	@echo "... tcp_cam_pub_client"
-	@echo "... send_img_tcp"
+	@echo "... client"
 	@echo "... serial_pub_simple"
 	@echo "... client.o"
 	@echo "... client.i"
@@ -496,12 +414,6 @@ help:
 	@echo "... img_send_simple.o"
 	@echo "... img_send_simple.i"
 	@echo "... img_send_simple.s"
-	@echo "... recv_img_tcp.o"
-	@echo "... recv_img_tcp.i"
-	@echo "... recv_img_tcp.s"
-	@echo "... send_img_tcp.o"
-	@echo "... send_img_tcp.i"
-	@echo "... send_img_tcp.s"
 	@echo "... serial_pub_simple.o"
 	@echo "... serial_pub_simple.i"
 	@echo "... serial_pub_simple.s"

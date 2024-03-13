@@ -54,13 +54,11 @@ CMAKE_BINARY_DIR = /home/anton202/boost_rx_tx/build
 
 # The main recursive "all" target.
 all: CMakeFiles/tcp_cam_sub_server.dir/all
+all: CMakeFiles/tcp_cam_pub_client.dir/all
 all: CMakeFiles/img_recv_simple.dir/all
 all: CMakeFiles/img_send_simple.dir/all
-all: CMakeFiles/client.dir/all
 all: CMakeFiles/server.dir/all
-all: CMakeFiles/recv_img_tcp.dir/all
-all: CMakeFiles/tcp_cam_pub_client.dir/all
-all: CMakeFiles/send_img_tcp.dir/all
+all: CMakeFiles/client.dir/all
 all: CMakeFiles/serial_pub_simple.dir/all
 
 .PHONY : all
@@ -72,13 +70,11 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/tcp_cam_sub_server.dir/clean
+clean: CMakeFiles/tcp_cam_pub_client.dir/clean
 clean: CMakeFiles/img_recv_simple.dir/clean
 clean: CMakeFiles/img_send_simple.dir/clean
-clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/server.dir/clean
-clean: CMakeFiles/recv_img_tcp.dir/clean
-clean: CMakeFiles/tcp_cam_pub_client.dir/clean
-clean: CMakeFiles/send_img_tcp.dir/clean
+clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/serial_pub_simple.dir/clean
 
 .PHONY : clean
@@ -90,7 +86,7 @@ clean: CMakeFiles/serial_pub_simple.dir/clean
 CMakeFiles/tcp_cam_sub_server.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_cam_sub_server.dir/build.make CMakeFiles/tcp_cam_sub_server.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_cam_sub_server.dir/build.make CMakeFiles/tcp_cam_sub_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=17,18 "Built target tcp_cam_sub_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=13,14 "Built target tcp_cam_sub_server"
 .PHONY : CMakeFiles/tcp_cam_sub_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -109,6 +105,33 @@ tcp_cam_sub_server: CMakeFiles/tcp_cam_sub_server.dir/rule
 CMakeFiles/tcp_cam_sub_server.dir/clean:
 	$(MAKE) -f CMakeFiles/tcp_cam_sub_server.dir/build.make CMakeFiles/tcp_cam_sub_server.dir/clean
 .PHONY : CMakeFiles/tcp_cam_sub_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tcp_cam_pub_client.dir
+
+# All Build rule for target.
+CMakeFiles/tcp_cam_pub_client.dir/all:
+	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/depend
+	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=11,12 "Built target tcp_cam_pub_client"
+.PHONY : CMakeFiles/tcp_cam_pub_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcp_cam_pub_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_cam_pub_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
+.PHONY : CMakeFiles/tcp_cam_pub_client.dir/rule
+
+# Convenience name for target.
+tcp_cam_pub_client: CMakeFiles/tcp_cam_pub_client.dir/rule
+
+.PHONY : tcp_cam_pub_client
+
+# clean rule for target.
+CMakeFiles/tcp_cam_pub_client.dir/clean:
+	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/clean
+.PHONY : CMakeFiles/tcp_cam_pub_client.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/img_recv_simple.dir
@@ -165,6 +188,33 @@ CMakeFiles/img_send_simple.dir/clean:
 .PHONY : CMakeFiles/img_send_simple.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/server.dir
+
+# All Build rule for target.
+CMakeFiles/server.dir/all:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=9,10 "Built target server"
+.PHONY : CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
+.PHONY : CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+CMakeFiles/server.dir/clean:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
+.PHONY : CMakeFiles/server.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/client.dir
 
 # All Build rule for target.
@@ -192,121 +242,13 @@ CMakeFiles/client.dir/clean:
 .PHONY : CMakeFiles/client.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/server.dir
-
-# All Build rule for target.
-CMakeFiles/server.dir/all:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=13,14 "Built target server"
-.PHONY : CMakeFiles/server.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
-.PHONY : CMakeFiles/server.dir/rule
-
-# Convenience name for target.
-server: CMakeFiles/server.dir/rule
-
-.PHONY : server
-
-# clean rule for target.
-CMakeFiles/server.dir/clean:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
-.PHONY : CMakeFiles/server.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/recv_img_tcp.dir
-
-# All Build rule for target.
-CMakeFiles/recv_img_tcp.dir/all:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/depend
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=7,8 "Built target recv_img_tcp"
-.PHONY : CMakeFiles/recv_img_tcp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/recv_img_tcp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/recv_img_tcp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
-.PHONY : CMakeFiles/recv_img_tcp.dir/rule
-
-# Convenience name for target.
-recv_img_tcp: CMakeFiles/recv_img_tcp.dir/rule
-
-.PHONY : recv_img_tcp
-
-# clean rule for target.
-CMakeFiles/recv_img_tcp.dir/clean:
-	$(MAKE) -f CMakeFiles/recv_img_tcp.dir/build.make CMakeFiles/recv_img_tcp.dir/clean
-.PHONY : CMakeFiles/recv_img_tcp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/tcp_cam_pub_client.dir
-
-# All Build rule for target.
-CMakeFiles/tcp_cam_pub_client.dir/all:
-	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/depend
-	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=15,16 "Built target tcp_cam_pub_client"
-.PHONY : CMakeFiles/tcp_cam_pub_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/tcp_cam_pub_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_cam_pub_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
-.PHONY : CMakeFiles/tcp_cam_pub_client.dir/rule
-
-# Convenience name for target.
-tcp_cam_pub_client: CMakeFiles/tcp_cam_pub_client.dir/rule
-
-.PHONY : tcp_cam_pub_client
-
-# clean rule for target.
-CMakeFiles/tcp_cam_pub_client.dir/clean:
-	$(MAKE) -f CMakeFiles/tcp_cam_pub_client.dir/build.make CMakeFiles/tcp_cam_pub_client.dir/clean
-.PHONY : CMakeFiles/tcp_cam_pub_client.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/send_img_tcp.dir
-
-# All Build rule for target.
-CMakeFiles/send_img_tcp.dir/all:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/depend
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=9,10 "Built target send_img_tcp"
-.PHONY : CMakeFiles/send_img_tcp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/send_img_tcp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/send_img_tcp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anton202/boost_rx_tx/build/CMakeFiles 0
-.PHONY : CMakeFiles/send_img_tcp.dir/rule
-
-# Convenience name for target.
-send_img_tcp: CMakeFiles/send_img_tcp.dir/rule
-
-.PHONY : send_img_tcp
-
-# clean rule for target.
-CMakeFiles/send_img_tcp.dir/clean:
-	$(MAKE) -f CMakeFiles/send_img_tcp.dir/build.make CMakeFiles/send_img_tcp.dir/clean
-.PHONY : CMakeFiles/send_img_tcp.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/serial_pub_simple.dir
 
 # All Build rule for target.
 CMakeFiles/serial_pub_simple.dir/all:
 	$(MAKE) -f CMakeFiles/serial_pub_simple.dir/build.make CMakeFiles/serial_pub_simple.dir/depend
 	$(MAKE) -f CMakeFiles/serial_pub_simple.dir/build.make CMakeFiles/serial_pub_simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=11,12 "Built target serial_pub_simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/anton202/boost_rx_tx/build/CMakeFiles --progress-num=7,8 "Built target serial_pub_simple"
 .PHONY : CMakeFiles/serial_pub_simple.dir/all
 
 # Build rule for subdir invocation for target.

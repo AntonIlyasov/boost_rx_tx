@@ -23,11 +23,11 @@ include_directories(${Boost_INCLUDE_DIRS})
 add_executable( serial_pub_simple serial_pub_simple.cpp )
 target_link_libraries( serial_pub_simple ${Boost_LIBRARIES} )
 
-add_executable( send_img_tcp send_img_tcp.cpp )
-target_link_libraries( send_img_tcp ${Boost_LIBRARIES} )
+# add_executable( send_img_tcp send_img_tcp.cpp )
+# target_link_libraries( send_img_tcp ${Boost_LIBRARIES} )
 
-add_executable( recv_img_tcp recv_img_tcp.cpp )
-target_link_libraries( recv_img_tcp ${Boost_LIBRARIES} )
+# add_executable( recv_img_tcp recv_img_tcp.cpp )
+# target_link_libraries( recv_img_tcp ${Boost_LIBRARIES} )
 
 add_executable( client client.cpp )
 target_link_libraries( client ${Boost_LIBRARIES} )
@@ -73,8 +73,8 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 target_link_libraries( tcp_cam_pub_client ${OpenCV_LIBS} )
 target_link_libraries( tcp_cam_sub_server ${OpenCV_LIBS} )
-target_link_libraries( send_img_tcp ${OpenCV_LIBS} )
-target_link_libraries( recv_img_tcp ${OpenCV_LIBS} )
+# target_link_libraries( send_img_tcp ${OpenCV_LIBS} )
+# target_link_libraries( recv_img_tcp ${OpenCV_LIBS} )
 
 # target_link_libraries( tcp_cam_client ${OpenCV_LIBS} )
 # target_link_libraries( tcp_cam_server ${OpenCV_LIBS} )

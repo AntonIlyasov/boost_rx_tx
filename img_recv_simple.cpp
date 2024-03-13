@@ -5,6 +5,8 @@
 #include <fstream>
 #include <filesystem>
 
+#define PORT  1111
+
 using namespace boost::asio;
 
 const std::string savingDirectory{"./received/"};
@@ -105,7 +107,7 @@ int main()
     }
 
     boost::asio::io_context io_context;
-    server srv(io_context, 1234);
+    server srv(io_context, PORT);
     srv.async_accept();
     io_context.run();
 
